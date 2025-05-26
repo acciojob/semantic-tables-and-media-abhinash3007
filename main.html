@@ -8,47 +8,43 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	  <table border="1">
+	 <table aria-describedby="student-data-description">
+        <caption>Student Roll Numbers and Names</caption>
         <thead>
             <tr>
-                <th>Roll Number</th>
-                <th>Name</th>
+                <th scope="col">Roll Number</th>
+                <th scope="col">Name</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>1</td>
-                <td>John Doe</td>
+                <td>101</td>
+                <td>Alice Smith</td>
             </tr>
             <tr>
-                <td>2</td>
-                <td>Jane Smith</td>
+                <td>102</td>
+                <td>Bob Johnson</td>
             </tr>
             <tr>
-                <td>3</td>
-                <td>Robert Johnson</td>
+                <td>103</td>
+                <td>Charlie Brown</td>
             </tr>
         </tbody>
     </table>
 
-    <!-- Heading between table and list -->
-    <h2>List of medias</h2>
+    <h2 id="list-of-medias-heading">List of medias</h2>
 
-    <!-- Ordered List of Media Items -->
-    <ol>
+    <ol aria-labelledby="list-of-medias-heading">
         <li>
-            Image:
-            <img src="https://picsum.photos/id/123/200/300" alt="Random placeholder image from picsum.photos">
+            <img src="https://picsum.photos/id/123/200/300" alt="A random image from Picsum, showing a natural landscape.">
         </li>
         <li>
-            Video:
-            <video controls width="400">
+            <video controls width="320" height="240">
                 <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </li>
         <li>
-            Audio:
             <audio controls>
                 <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
                 Your browser does not support the audio element.
